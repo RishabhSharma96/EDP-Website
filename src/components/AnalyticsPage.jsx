@@ -1,8 +1,12 @@
 import React from 'react'
+import Navbar from './Navbar'
+import TopNavbar from './TopNavbar'
 
 const AnalyticsPage = () => {
     return (
         <div>
+        <TopNavbar/>
+        <Navbar/>
 
             <div className="pt-[10rem] flex gap-5 flex-wrap justify-center items-center">
 
