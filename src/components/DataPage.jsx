@@ -1,9 +1,15 @@
 import React from 'react'
+import Navbar from './Navbar'
+import TopNavbar from './TopNavbar'
 
 import graph from "../../public/demo-graph.png"
 
 const DataPage = ({ pagename, value }) => {
     return (
+
+        <>
+<TopNavbar/>
+        <Navbar/>
         <div className='w-full p-4 flex items-center flex-col'>
 
             <div className='text-blue-950 w-full flex items-center h-12 justify-center font-extrabold text-3xl rounded-t-xl'>{pagename}</div>
@@ -28,6 +34,7 @@ const DataPage = ({ pagename, value }) => {
 
 
         </div>
+        </>
     )
 }
 
