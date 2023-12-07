@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  react-project-dev:
+    container_name: react-project-container
+    image: react-project-dev-image
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "127.0.0.1:5173:5173" 
+    volumes:
+      - .:/EDP-WEBSITE
+      - /EDP-WEBSITE/node_modules
+    command: npm run dev
