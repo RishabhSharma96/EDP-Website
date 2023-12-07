@@ -8,7 +8,7 @@ services:
       context: .
       dockerfile: Dockerfile.dev
     ports:
-      - "127.0.0.1:5173:5173" 
+      - "5173:5173" 
     volumes:
       - .:/EDP-WEBSITE
       - /EDP-WEBSITE/node_modules
